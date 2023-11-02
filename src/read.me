@@ -1,0 +1,25 @@
+
+building an app that tracks todo items
+
+this app will have 5 routes that do the following 
+
+1. Adding and items
+
+POST /items
+{
+    "name": "feed the cat",
+    "notes": "the cat really likes tuna, but she is only allowed 1 can a week."
+}
+
+2. List all items
+GET /items/:id
+return an array of all the items
+
+3. Get an item
+----------
+internally to the app we want to store items and we want to track the following aobut them
+
+id: uniquely identifies the item
+label: this is a general summary of the item
+notes: notes about this item
+done: true if the item is done, false if not done
