@@ -1,8 +1,11 @@
 let express = require("express");
+let static = express.static("public");
 let PORT = 8002;
 
 let app = express();
-app.use(express.json());  // this is what allows us to parse json in the request body
+
+let jsonParser = express.json();
+app.use(jsonParser);
 
 let routes = require("./routes");
 app.use(routes);
