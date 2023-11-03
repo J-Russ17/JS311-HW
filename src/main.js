@@ -1,5 +1,4 @@
 let express = require("express");
-let static = express.static("public");
 let PORT = 8002;
 
 let app = express();
